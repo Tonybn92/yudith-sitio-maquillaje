@@ -100,7 +100,8 @@ form ul li #enviarCorreo {
     }
     
     .checkbox {
-        margin-left: 100px;
+        margin-left: 150px;
+        margin-top: 5px;
     }
 
     input {
