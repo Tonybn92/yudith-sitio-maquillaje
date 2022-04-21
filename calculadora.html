@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/calculadora.css" />
+    <script src="js/calculadora.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="menu">
+
+        <div id="container">
+            <a class="principal" href="index.html">REGRESAR</a>
+
+        </div>
+
+    </nav>
+    <div class="modal-header">
+        <h4 class="modal-title">Calculadora</h4>
+        <div class="container">
+        <img src="images/rostro completoPNG.PNG" class="rostro">
+         </div>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+    <!-- Modal body -->
+    <div class="modal-body">
+        <form name="calculator" class="calc">
+            <input type="textfield" name="res" value="" id="res">
+            <br>
+            <input type="textfield" name="ans" value="" id="ans">
+            <br>
+            <select class="memoria" name="memoria" id="mem">
+                <option value="" selected>- Cálculos Realizados -</option>
+            </select>
+            <input type="button" value="M" onclick="regMemoriaLocal( document.calculator.ans.value,document.calculator.res.value)">
+            <input type="button" value="S" onclick="">
+            <input type="button" value="(" onclick="concatenaOperacion('(')">
+            <input type="button" value=")" onclick="concatenaOperacion(')')">
+            <br>
+            <input type="button" value="P">
+            <input type="button" value="R">
+            <input type="button" value="L">
+            <input type="button" value="%" onclick="concatenaOperacion('%')">
+            <br>
+            <input type="button" value="1" onclick="concatenaOperacion('1')">
+            <input type="button" value="2" onclick="concatenaOperacion('2')"> 
+            <input type="button" value="3" onclick="concatenaOperacion('3')"> 
+            <input type="button" value="+" onclick="concatenaOperacion('+')"> 
+            <br>
+            <input type="button" value="4" onclick="concatenaOperacion('4')"> 
+            <input type="button" value="5" onclick="concatenaOperacion('5')">
+            <input type="button" value="6" onclick="concatenaOperacion('6')">
+            <input type="button" value="-" onclick="concatenaOperacion('-')">
+            <br>
+            <input type="button" value="7" onclick="concatenaOperacion('7')">
+            <input type="button" value="8" onclick="concatenaOperacion('8')">
+            <input type="button" value="9" onclick="concatenaOperacion('9')">
+            <input type="button" value="*" onclick="concatenaOperacion('*')">
+            <br>
+            <input type="button" value="0" onclick="concatenaOperacion('0')"> 
+            <input type="reset" value="C">
+            <input type="button" value="/" onclick="concatenaOperacion('/')">
+            <input type="button" value="=" onclick="ejecutaExpresion(document.calculator.ans.value)">
+        </form>
+
+    </div>
+
+    <footer id="footer">
+
+        <credit>&copy; Derechos Reservados ISW-DAW UTN I-2022</credit>
+        <div id="date">2022</div>
+        <script>
+            document.getElementById("date").innerHTML = new Date().toDateString()
+        </script>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ubicacion.css">
+    <title>Consumo de Google  Map API</title>
+   
+
+</head>
+<body>
+   
+    <nav id="menu">
+
+        <div id="container">
+            <a class="principal" href="index.html">REGRESAR</a>
+            
+        </div>
+
+    </nav>
+
+
+
+<h1> Google Maps API</h1>
+<h1> País:Costa Rica.Provincia:Heredia.Cantón:Heredia.Distrito:Ulloa.Localidad:La Aurora </h2>
+ <input type="text" id="place" placeholder="Ingresar una ubicación" onclick=" function initAutocomplete(input)">  
+<div id="map"></div>
+
+<!-- Codigo de java script-->
+<script src="js/ubicacion.js"></script>
+<!--en enlace  url para consumir el api privada-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz3e8eeKJeJG-xV6Vi0TtO1Z_G7FORV4s&callback=iniciarMap"></script>
+    
+<footer id="footer">
+    <credit>&copy; Derechos Reservados ISW-DAW UTN I-2022</credit>
+    <div id="date">2022</div>
+    <script>
+      document.getElementById("date").innerHTML = new Date().toDateString();
+    </script>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+
+
+body{
+    background: white; /*para que la imagen se repita a lo ancho */
+    font-size: 13px; /* Tamaño de fuente */
+    font-family: "trebuchet ms", helvetica, sans-herif;
+    color: black;
+    line-height: 18px; /*Tamaño de la línea*/
+}
+
+#menu{
+    display: flex; /*cajas flexibles*/
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #34375b;
+}
+
+/*----Navegador----*/
+
+
+
+#menu li{
+ display: inline-block;
+ text-align: center;
+
+}
+
+
+
+
+#container .principal{
+    float: left;
+    color: pink;
+   
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px 10px 25px; /*izquierda, arriba, derecha, abajo*/
+}
+
+
+
+
+h4{text-align: center;
+   font-size: 100px;
+    color:aqua }
+
+form {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: solid 1px #c2c2c2;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin: auto;
+    background: purple;
+    margin-bottom:20px;
+    margin-top:20px;
+  }
+  input[type=textfield] {
+      width: 73%;
+      padding: 16px 32px;
+      font-size: 16px;
+      border: 1px solid silver;
+      border-radius: 1px;
+      text-align: left;
+      color: white;
+      background: pink;
+  }
+  
+  input[type=button], input[type=submit], input[type=reset] {
+      background-color: lightskyblue;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      font-size: 16px;
+      min-width: 21%;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #1A1814;
+  }
+  
+  .calc h3 {  
+    font: normal 200% arial, sans-serif;
+   
+    padding: 15px 20px 5px 0;
+    color: #E5017D;
+    text-align:center;
+  }
+
+  .memoria {
+    width: 89%;
+    padding: 16px 32px;
+    font-size: 16px;
+    border: 1px solid silver;
+    border-radius: 1px;
+    text-align: left;
+    color: greenyellow;
+    background:#34375b;
+}
+
+div.container{
+  width:50%;
+  max-width: 500px;
+  margin:0 auto;
+}
+
+
+img{
+border-radius: 90px;
+width:100%;
+height: auto;
+}
+
+
+
+
+  #footer{
+    border-top: double; /*investigar*/
+    clear: both;
+    height: 66px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: fuchsia;
+    color: white;
+}
+

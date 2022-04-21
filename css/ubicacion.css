@@ -1,0 +1,70 @@
+h1{
+    color:  purple;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+
+#map{
+   height: 800px;
+   width: 100%;
+}
+
+
+body{
+    background:pink ; /*para que la imagen se repita a lo ancho */
+    font-size: 13px; /* Tamaño de fuente */
+    font-family: "trebuchet ms", helvetica, sans-herif;
+    color: black;
+    line-height: 18px; /*Tamaño de la línea*/
+}
+
+#menu{
+    display: flex; /*cajas flexibles*/
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #34375b;
+}
+
+/*----Navegador----*/
+
+
+
+#menu li{
+ display: inline-block;
+ text-align: center;
+
+}
+
+
+
+
+#container .principal{
+    float: left;
+    color: pink;
+    border: 1px solid white; /*estilo de borde*/
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px 10px 25px; /*izquierda, arriba, derecha, abajo*/
+}
+
+
+#footer{
+    border-top: double; /*investigar*/
+    clear: both;
+    height: 66px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: fuchsia;
+    color: white;
+}
+  
+#place{
+
+    width: 100%;
+    height: 48px;
+    border-radius: 0;
+    border:black;
+    font-size: 22px;
+}
