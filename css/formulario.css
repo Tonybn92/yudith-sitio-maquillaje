@@ -98,9 +98,14 @@ form ul li #enviarCorreo {
     form #contenido_form{
         padding: 20px;
     }
+    
+    .checkbox {
+        margin-left: 50px;
+    }
 
-    form #contenido_form ul #boton_enviar{
-        text-align: center;
+    input {
+        width: 200px;
+        display: inline-block;
     }
 
 }
